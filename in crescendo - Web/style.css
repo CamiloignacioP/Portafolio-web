@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+
+}
+
+h1 {font-size: 3.0em;}
+h2 {font-size: 2.5em}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+.color-especial {background-color: rgb(79,9,9); 
+    padding: 1px 10px; color: beige; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.video {
+    max-width: 700px;
+    width: 100%;
+}
+
+button {
+    font-size: 1.25em; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(75, 9, 9);
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(75, 9, 9);
+
+}
+
+header .logo {
+    margin: 0;
+    padding: 40px 30px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: bold;
+    color: rgb(186, 209, 84)
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    margin: 0;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+header a {
+    text-decoration: none;
+    padding: 6px 12px;
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+
+header a:hover {
+    color: rgb(186, 209, 84);
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5))
+    ,url("images/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: beige;
+    padding: 10px 12px;
+    margin-top: 0;
+}
+
+#hero h1 span {
+
+    color: rgb(186, 209, 84);
+}
+
+#somos-increscendo .container {
+    text-align: center;
+    padding: 200px 20px;
+}
+
+#somos-increscendo h2 {
+    font-size: 2.25em;
+}
+
+#nuestras-clases {
+    background-color: rgb(19, 18, 18);
+    color: beige;
+    text-align: center;
+}
+
+#nuestras-clases .container {
+    padding: 100px 12px;
+}
+
+#nuestras-clases .container h2 {
+    margin-top: 0px;
+    color: rgb(186, 209, 84);
+    padding-bottom: 40px;
+    margin-top: 0;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+#nuestras-clases p {
+    display: none;
+}
+
+.clase_1 {
+    padding: 100px;
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5))
+    , url("images/clase-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.clase_1 h3 {
+    margin-top: 0px;
+}
+
+.clase_2 {
+    padding: 100px;
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5))
+    , url("images/clase-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.clase_2 h3 {
+    margin-top: 0px;
+}
+
+.clase_3 {
+    padding: 100px;
+    background-image: linear-gradient(0deg, rgb(0,0,0,0.5), rgb(0,0,0,0.5))
+    , url("images/clase-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.clase_3 h3 {
+    margin-top: 0px;
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 150px 12px;
+    justify-content: center;
+}
+
+#caracteristicas li{
+    padding: 10px;
+    font-weight: bold;
+}
+
+#final {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 130vh;
+    background-color: rgb(75, 9, 9);
+    color: beige;
+    margin: 0px;
+    padding: 100px 12px;
+}
+
+#final h2{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: rgb(186, 209, 84);
+}
+
+#final p {
+    color: rgb(186, 209, 84);
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+footer {
+    margin: 0px;
+    background-color: rgb(19, 18, 18);
+    padding: 25px;
+    color: beige;
+    text-align: center;
+}
+
+
+footer .container a {
+    text-decoration: none;
+    color: beige;
+
+
+}
+
+footer .container a:hover {
+    color: rgb(186, 209, 84);
+   
+
+
+}
+
+#caracteristicas .container ul {
+    color: rgb(75, 9, 9);
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 750px) {
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header nav {
+        flex-direction: row;
+        margin: 0 auto;
+        padding-bottom: 0;
+        padding-top: 2px;
+        margin-left: 100px;
+
+    
+    }
+
+    header nav a {
+        font-size: 1.25em;
+    }
+
+
+    header .logo {
+        
+        font-size: 2.10em;
+    
+    }
+
+    #hero button {
+        margin-bottom: 50px;
+    
+    }
+   
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+
+    #somos-increscendo .image-container {
+        background-image: url("images/studio.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #somos-increscendo .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .texto {
+        width: 50%;
+        padding-left: 50px;
+        text-align: left;
+        margin-top: 80px;
+    }
+
+    #somos-increscendo h2 {
+        font-size: 2.5em;
+    }
+
+
+    #nuestras-clases .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #nuestras-clases .clases {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #nuestras-clases .clases .clase_3 {
+        max-width: 370px;
+    }
+    
+    #nuestras-clases .clases .clase_2 {
+        max-width: 370px;
+    }
+
+    #nuestras-clases .clases .clase_1 {
+        max-width: 370px;
+    }
+
+    #nuestras-clases .clases .clase_2 button {
+        margin-top: 30px;
+    }
+
+    #nuestras-clases .clases .clase_3 button {
+        margin-top: 5px;
+    }
+
+    #nuestras-clases .clases .clase_2 h3 {
+        margin-top: 20px;
+    }
+
+    #nuestras-clases h2 {
+        color: rgb(186, 209, 84);
+        padding-bottom: 60px;
+        margin-top: 0;
+    }
+
+    #caracteristicas .container ul {
+        color: rgb(75, 9, 9);
+        font-weight: bolder;
+        padding: 0;
+        margin: 0;
+    }
+
+    #caracteristicas .container li {
+        padding: 10px;
+    }
+    
+    #final h2 {
+        font-size: 3em;
+    }
+
+    #final {
+        height: 155vh;
+    }
+    
+}
+
+
+
